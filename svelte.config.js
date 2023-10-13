@@ -3,10 +3,13 @@ import { vitePreprocess } from "@sveltejs/kit/vite"
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
-    preprocess: vitePreprocess(),
-
+    preprocess: vitePreprocess({
+        scss: {
+            prependData: "@import './src/lib/scss/base.scss';"
+        }
+    }),
     kit: {
-        adapter: adapter(),
+        adapter: adapter()
     },
 }
 
