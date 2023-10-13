@@ -4,7 +4,7 @@
     "beforeBuildCommand": "pnpm run build",
     "beforeDevCommand": "pnpm run dev",
     "devPath": "http://localhost:5173",
-    "distDir": "../static"
+    "distDir": "../build"
   },
   "package": {
     "productName": "tauri-svelte-template",
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "io.github.pleahmacaka",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -57,9 +57,9 @@
       {
         "title": "tauri-svelte-template",
         "fullscreen": false,
-        "height": 900,
+        "height": 480,
         "resizable": true,
-        "width": 1680,
+        "width": 900,
         "transparent": true,
         "decorations": false,
         "center": true
