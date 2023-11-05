@@ -1,5 +1,5 @@
 <script>
-    import Hello from "$lib/components/Hello.svelte"
+    import Hello from "../components/Hello.svelte"
 </script>
 
 <div class="centered">
@@ -7,5 +7,5 @@
 </div>
 
 <style lang="scss">
-    @import "../lib/scss/centered.scss";
+    @import "../scss/centered.scss";
 </style>
