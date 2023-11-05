@@ -10,13 +10,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-tauri:
+  build_app:
     strategy:
       fail-fast: false
       matrix:
         platform: [ macos-latest, ubuntu-20.04, windows-latest ]
 
     runs-on: ${{ matrix.platform }}
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@v4
