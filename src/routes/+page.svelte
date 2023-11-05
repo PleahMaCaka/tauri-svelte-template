@@ -5,7 +5,3 @@
 <div class="centered">
     <Hello />
 </div>
-
-<style lang="scss">
-    @import "../scss/centered.scss";
-</style>
