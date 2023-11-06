@@ -64,6 +64,7 @@ jobs:
             echo "Build workflow failed, aborting release."
             exit 1
           fi
+        shell: bash
 
       - name: Upload Tauri app to release
         uses: tauri-apps/tauri-action@v0
