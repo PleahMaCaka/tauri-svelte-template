@@ -1,10 +1,9 @@
 name: 'Release'
 
 on:
-  workflow_run:
-    workflows: [ "Build" ]
+  release:
     types:
-      - completed
+      - created
 
 jobs:
   build_app:
