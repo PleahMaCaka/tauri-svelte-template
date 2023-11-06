@@ -57,14 +57,6 @@ jobs:
           pnpm build
           pnpm tauri build
 
-      - name: Check Build workflow status
-        run: |
-          if [ "${{ github.event.workflow_run.conclusion }}" != "success" ]; then
-            echo "Build workflow failed, aborting release."
-            exit 1
-          fi
-        shell: bash
-
       - name: Upload Tauri app to release
         uses: tauri-apps/tauri-action@v0
         env:
