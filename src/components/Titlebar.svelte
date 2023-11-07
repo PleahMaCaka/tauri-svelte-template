@@ -45,6 +45,9 @@
 
     user-select: none;
 
+    border-radius: 0 10px 0 0;
+    padding: 0 8px;
+
     p {
       position: fixed;
       left: 50%;
@@ -56,7 +59,6 @@
     img {
       height: $tb-item-height;
       width: $tb-item-height;
-      margin-left: 6px;
     }
 
     button {
