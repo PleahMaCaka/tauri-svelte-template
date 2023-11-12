@@ -32,6 +32,7 @@
 
 <style lang="scss">
   $color: orange;
+  $font-color: #fdfdfd;
   $tb-height: 32px;
   $tb-item-height: $tb-height - 6px;
 
@@ -49,11 +50,11 @@
     padding: 0 8px;
 
     p {
-      position: fixed;
+      position: absolute;
       left: 50%;
       transform: translateX(-50%);
       font-weight: bold;
-      color: lightgrey;
+      color: $font-color;
     }
 
     img {
@@ -66,7 +67,7 @@
       width: $tb-item-height;
       border: none;
       background-color: transparent;
-      color: white;
+      color: $font-color;
       font-size: 16px;
       font-weight: bold;
       cursor: pointer;
