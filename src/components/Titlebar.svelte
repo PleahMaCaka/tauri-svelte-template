@@ -45,7 +45,7 @@
 
     user-select: none;
 
-    border-radius: 0 10px 0 0;
+    border-radius: 10px 10px 0 0;
     padding: 0 8px;
 
     p {
