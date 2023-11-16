@@ -31,52 +31,52 @@
 </div>
 
 <style lang="scss">
-  $color: orange;
-  $font-color: #fdfdfd;
-  $tb-height: 32px;
-  $tb-item-height: $tb-height - 6px;
+    $color: orange;
+    $font-color: #fdfdfd;
+    $tb-height: 32px;
+    $tb-item-height: $tb-height - 6px;
 
-  .titlebar {
-    background-color: $color;
-    height: $tb-height;
+    .titlebar {
+        background-color: $color;
+        height: $tb-height;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    user-select: none;
+        user-select: none;
 
-    border-radius: 10px 10px 0 0;
-    padding: 0 8px;
+        border-radius: 10px 10px 0 0;
+        padding: 0 8px;
 
-    p {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-weight: bold;
-      color: $font-color;
+        p {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            color: $font-color;
+        }
+
+        img {
+            height: $tb-item-height;
+            width: $tb-item-height;
+        }
+
+        button {
+            height: $tb-item-height;
+            width: $tb-item-height;
+            border: none;
+            background-color: transparent;
+            color: $font-color;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            align-items: center;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: background-color 0.13s ease-in-out;
+            }
+        }
     }
-
-    img {
-      height: $tb-item-height;
-      width: $tb-item-height;
-    }
-
-    button {
-      height: $tb-item-height;
-      width: $tb-item-height;
-      border: none;
-      background-color: transparent;
-      color: $font-color;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      align-items: center;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        transition: background-color 0.13s ease-in-out;
-      }
-    }
-  }
 </style>

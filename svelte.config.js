@@ -1,5 +1,3 @@
-// noinspection JSUnresolvedReference
-
 import adapter from "@sveltejs/adapter-static"
 import { vitePreprocess } from "@sveltejs/kit/vite"
 
@@ -11,5 +9,4 @@ const config = {
     }
 }
 
-// noinspection JSUnusedGlobalSymbols
 export default config

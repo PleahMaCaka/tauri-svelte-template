@@ -3,7 +3,7 @@
     import Toolbar from "../components/Titlebar.svelte"
 </script>
 
-<Toolbar/>
+<Toolbar />
 <div class="centered">
     <Hello />
 </div>
