@@ -1,9 +1,3 @@
-<script>
-    const test = () => {
-        console.log(123)
-    }
-</script>
-
 <h2>Welcome to Tauri Svelte Template!</h2>
 
 <style lang="scss">

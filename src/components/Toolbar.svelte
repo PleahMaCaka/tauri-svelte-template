@@ -1,23 +1,23 @@
 <script lang="ts">
-    import { appWindow } from "@tauri-apps/api/window"
+  import { appWindow } from "@tauri-apps/api/window"
 
-    const onMinimize = () => {
-        appWindow.minimize()
-    }
+  const onMinimize = () => {
+    appWindow.minimize()
+  }
 
-    const onMaximize = () => {
-        appWindow.isMaximized().then((isMaximized) => {
-            if (isMaximized) {
-                appWindow.unmaximize()
-            } else {
-                appWindow.maximize()
-            }
-        })
-    }
+  const onMaximize = () => {
+    appWindow.isMaximized().then((isMaximized) => {
+      if (isMaximized) {
+        appWindow.unmaximize()
+      } else {
+        appWindow.maximize()
+      }
+    })
+  }
 
-    const onClose = () => {
-        appWindow.close()
-    }
+  const onClose = () => {
+    appWindow.close()
+  }
 </script>
 
 <div class="toolbar" data-tauri-drag-region>
