@@ -20,7 +20,9 @@
   }
 </script>
 
-<div class="toolbar" data-tauri-drag-region>
+`<div data-tauri-drag-region
+     class="toolbar flex items-center justify-between select-none"
+>
   <img alt="Logo" src="/favicon.png" />
   <p>Tauri Svelte Template!</p>
   <div>
@@ -39,12 +41,6 @@
   .toolbar {
     background-color: $color;
     height: $tb-height;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    user-select: none;
 
     border-radius: 10px 10px 0 0;
     padding: 0 8px;
