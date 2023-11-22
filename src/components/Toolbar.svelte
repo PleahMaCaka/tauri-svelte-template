@@ -20,7 +20,7 @@
   }
 </script>
 
-`<div data-tauri-drag-region
+<div data-tauri-drag-region
      class="toolbar flex items-center justify-between select-none"
 >
   <img alt="Logo" src="/favicon.png" />
