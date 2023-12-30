@@ -1,4 +1,5 @@
 <script lang="ts">
+  // The script remains the same as it's not affected by the CSS changes
   import { appWindow } from "@tauri-apps/api/window"
 
   const onMinimize = () => {
@@ -21,58 +22,25 @@
 </script>
 
 <div data-tauri-drag-region
-     class="toolbar flex items-center justify-between select-none"
+     class="h-8 flex justify-between items-center bg-primary select-none rounded-t-xl px-2"
 >
-  <img alt="Logo" src="/favicon.png" />
-  <p>Tauri Svelte Template!</p>
-  <div>
-    <button on:click={onMinimize}>-</button>
-    <button on:click={onMaximize}>[]</button>
-    <button on:click={onClose}>x</button>
+  <img class="h-6 w-6" alt="Logo" src="/favicon.png" />
+  <p class="absolute left-1/2 transform -translate-x-1/2 font-bold text-white">Tauri Svelte Template!</p>
+  <div class="flex items-center justify-between w-20">
+    <button on:click={onMinimize} class="toolbar-btn">
+      <img alt="Minimize" src="/toolbar/minimize.svg" />
+    </button>
+    <button on:click={onMaximize} class="toolbar-btn">
+      <img alt="Maximize" src="/toolbar/maximize.svg" />
+    </button>
+    <button on:click={onClose} class="toolbar-btn">
+      <img alt="Close" src="/toolbar/close.svg" />
+    </button>
   </div>
 </div>
 
-<style lang="scss">
-  $color: orange;
-  $font-color: #fdfdfd;
-  $tb-height: 32px;
-  $tb-item-height: $tb-height - 6px;
-
-  .toolbar {
-    background-color: $color;
-    height: $tb-height;
-
-    border-radius: 10px 10px 0 0;
-    padding: 0 8px;
-
-    p {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      font-weight: bold;
-      color: $font-color;
-    }
-
-    img {
-      height: $tb-item-height;
-      width: $tb-item-height;
-    }
-
-    button {
-      height: $tb-item-height;
-      width: $tb-item-height;
-      border: none;
-      background-color: transparent;
-      color: $font-color;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      align-items: center;
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        transition: background-color 0.13s ease-in-out;
-      }
-    }
+<style lang="postcss">
+  .toolbar-btn {
+    @apply h-4 w-4 m-auto font-bold cursor-pointer hover:opacity-55 duration-75 transition-colors ease-in-out;
   }
 </style>
